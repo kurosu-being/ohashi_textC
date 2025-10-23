@@ -29,7 +29,6 @@ namespace Practice1_2 {
             GetDouble(wMyClass, wMyStruct);
             // 3の解答
             PrintObjects(wMyClass, wMyStruct);
-
         }
         // 1の解答
         /// <summary>
