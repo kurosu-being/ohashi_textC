@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // 問題 1.2
 
@@ -26,44 +22,33 @@ using System.Threading.Tasks;
 
 namespace Practice1_2 {
     internal class Program {
+        /// <summary>
+        ///  Myclass、MyStructのインスタンスを生成し、PrintObjectsメソッドを呼び出す
+        ///  その後、2倍後の各プロパティの値をコンソールに表示する
+        /// </summary>
         static void Main(string[] args) {
             // 2の解答
             MyClass wMyClass = new MyClass(10, 20);
             MyStruct wMyStruct = new MyStruct(30, 40);
             PrintObjects(wMyClass, wMyStruct);
             // 3の解答
-            Console.WriteLine("MyClass の X は" + wMyClass.X + ", Y は " + wMyClass.Y + " ２倍になっている！");
-            Console.WriteLine("MyStructの X は" + wMyStruct.X + ", Y は " + wMyStruct.Y + " 変化していない！");
+            Console.WriteLine($"MyClass の X は { wMyClass.X } , Y は { wMyClass.Y } ２倍になっている！");
+            Console.WriteLine($"MyStructの X は { wMyStruct.X } , Y は { wMyStruct.Y } 変化していない！");
         }
         // 1の解答
-        static void PrintObjects(MyClass vMyclass, MyStruct vMystruct) {
-            Console.WriteLine("MyClass の X は" + vMyclass.X + ", Y は " + vMyclass.Y);
-            Console.WriteLine("MyStructの X は" + vMystruct.X + ", Y は " + vMystruct.Y);
+        /// <summary>
+        /// vMyClassとvMyStructの内容をコンソールに表示し、それぞれのプロパティの値を２倍する
+        /// </summary>
+        /// <param name="vMyClass">MyClass型の2数</param>
+        /// <param name="vMyStruct">MyStruct型の2数</param>
+        static void PrintObjects(MyClass vMyClass, MyStruct vMyStruct) {
+            Console.WriteLine($"MyClass の X は {vMyClass.X} , Y は {vMyClass.Y} ２倍になっている！");
+            Console.WriteLine($"MyStructの X は {vMyStruct.X} , Y は {vMyStruct.Y} 変化していない！");
             // 3の解答
-            vMyclass.X *= 2;
-            vMyclass.Y *= 2;
-            vMystruct.X *= 2;
-            vMystruct.Y *= 2;
-        }
-    }
-
-    class MyClass {
-        public int X;
-        public int Y;
-
-        public MyClass(int vx, int vy) {
-            this.X = vx;
-            this.Y = vy;
-        }
-    }
-
-    struct MyStruct {
-        public int X;
-        public int Y;
-
-        public MyStruct(int vx, int vy) {
-            this.X = vx;
-            this.Y = vy;
+            vMyClass.X *= 2;
+            vMyClass.Y *= 2;
+            vMyStruct.X *= 2;
+            vMyStruct.Y *= 2;
         }
     }
 }

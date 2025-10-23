@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // 問題 1.3
 
@@ -18,6 +14,10 @@ using System.Threading.Tasks;
 // ４．２で生成したインスタンスをPerson型およびobject型の変数に代入できることを確認してください。
 
 namespace Practice1_3 {
+    /// <summary>
+    /// Studentクラスのインスタンスを生成し、各プロパティの値をコンソールに出力する
+    /// その後、Person型およびobject型の変数に代入できることを確認する
+    /// </summary>
     internal class Program {
         static void Main(string[] args) {
             // 2の解答
@@ -27,20 +27,11 @@ namespace Practice1_3 {
             student.Grade = 1;
             student.ClassNumber = 2;
             // 3の解答
-            Console.WriteLine(student.Grade + "年" + student.ClassNumber + "組の" + student.Name
-                + "です。誕生日は " + student.Birthday.ToString("yyyy年MM月dd日") + "です");
+            Console.WriteLine($"{ student.Grade } 年 { student.ClassNumber } 組の { student.Name} " +
+                $"です。誕生日は { student.Birthday.ToString("yyyy年MM月dd日") }  です");
             // 4の解答
             Person wPerson = student;
             object wObj = student;
         }
-    }
-    public class Person {
-        public string Name;
-        public DateTime Birthday;
-    }
-    // 1の解答
-    public class Student : Person {
-        public int Grade;
-        public int ClassNumber;
     }
 }

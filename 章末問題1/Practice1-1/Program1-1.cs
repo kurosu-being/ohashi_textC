@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ProductNamespace;
+﻿using ProductNamespace;
+using System;
 
 // 問題 1.1
 
@@ -16,29 +12,18 @@ using ProductNamespace;
 //     ただし、MainメソッドのあるProgramクラスの名前空間はそのままとしてください。
 
 namespace Practice1_1 {
-     internal class Program {
+    /// <summary>
+    ///  Mainメソッドを実行するクラス
+    /// </summary>
+    internal class Program {
+        /// <summary>
+        /// どら焼きオブジェクトを作成し、消費税額を計算してコンソールに出力する
+        /// </summary>
         static void Main(string[] args) {
             // 1の解答
             Product wProduct = new Product(98, "どら焼き", 210);
             // 2の解答
-            Console.WriteLine("どら焼きの消費税額は、" + wProduct.GetTax() + "円です");
-        }
-    }
-}
-namespace ProductNamespace {
-     internal class Product {
-        public int Code { get; private set; }
-        public string Name { get; private set; }
-        public int Price { get; private set; }
-
-        public Product(int vCode, string vName, int vPrice) {
-            this.Code = vCode;
-            this.Name = vName;
-            this.Price = vPrice;
-        }
-
-        public int GetTax() {
-            return (int)(this.Price * 0.08);
+            Console.WriteLine($"どら焼きの消費税額は、{wProduct.GetTax()}円です");
         }
     }
 }
