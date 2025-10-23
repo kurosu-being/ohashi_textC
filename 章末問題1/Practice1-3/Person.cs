@@ -8,10 +8,10 @@ namespace Practice1_3 {
         /// <summary>
         /// 名前
         /// </summary>
-        public string Name;
+        public string Name { get; set; }
         /// <summary>
         /// 生年月日
         /// </summary>
-        public DateTime Birthday;
+        public DateTime Birthday { get; set; }
     }
 }

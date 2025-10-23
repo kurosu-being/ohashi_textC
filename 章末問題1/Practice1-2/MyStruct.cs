@@ -1,5 +1,4 @@
-﻿
-namespace Practice1_2 {
+﻿namespace Practice1_2 {
     /// <summary>
     /// MyStruct型の2数を保持する構造体
     /// </summary>
@@ -7,19 +6,19 @@ namespace Practice1_2 {
         /// <summary>
         /// 一つ目の数値
         /// </summary>
-        public int X;
+        public int X { get; set; }
         /// <summary>
         /// 二つ目の数値
         /// </summary>
-        public int Y;
+        public int Y { get; set; }
         /// <summary>
         /// MyStruct型の2数を初期化するコンストラクタ
         /// </summary>
-        /// <param name="vx">一つ目に設定する数値</param>
-        /// <param name="vy">二つ目に設定する数値</param>
-        public MyStruct(int vx, int vy) {
-            this.X = vx;
-            this.Y = vy;
+        /// <param name="vX">一つ目に設定する数値</param>
+        /// <param name="vY">二つ目に設定する数値</param>
+        public MyStruct(int vX, int vY) {
+            this.X = vX;
+            this.Y = vY;
         }
     }
 }

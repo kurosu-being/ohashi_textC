@@ -1,5 +1,4 @@
-﻿
-namespace Practice1_2 {
+﻿namespace Practice1_2 {
     /// <summary>
     /// MyClass型の2数を保持するクラス
     /// </summary>
@@ -15,11 +14,11 @@ namespace Practice1_2 {
         /// <summary>
         /// MyClass型の2数を初期化するコンストラクタ
         /// </summary>
-        /// <param name="vx">一つ目に設定する数値</param>
-        /// <param name="vy">二つ目に設定する数値</param>
-        public MyClass(int vx, int vy) {
-            this.X = vx;
-            this.Y = vy;
+        /// <param name="vX">一つ目に設定する数値</param>
+        /// <param name="vY">二つ目に設定する数値</param>
+        public MyClass(int vX, int vY) {
+            this.X = vX;
+            this.Y = vY;
         }
     }
 }

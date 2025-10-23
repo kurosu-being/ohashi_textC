@@ -1,5 +1,4 @@
-﻿
-namespace ProductNamespace {
+﻿namespace ProductNamespace {
     /// <summary>
     /// 商品情報を管理する
     /// </summary>
