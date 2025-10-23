@@ -21,17 +21,17 @@ namespace Practice1_3 {
     internal class Program {
         static void Main(string[] args) {
             // 2の解答
-            Student student = new Student();
-            student.Name = "大橋 陸";
-            student.Birthday = new DateTime(2002, 10, 4);
-            student.Grade = 1;
-            student.ClassNumber = 2;
+            Student wStudent = new Student();
+            wStudent.Name = "大橋 陸";
+            wStudent.Birthday = new DateTime(2002, 10, 4);
+            wStudent.Grade = 1;
+            wStudent.ClassNumber = 2;
             // 3の解答
-            Console.WriteLine($"{ student.Grade } 年 { student.ClassNumber } 組の { student.Name} " +
-                $"です。誕生日は { student.Birthday.ToString("yyyy年MM月dd日") }  です");
+            Console.WriteLine($"{ wStudent.Grade } 年 { wStudent.ClassNumber } 組の { wStudent.Name} " +
+                $"です。誕生日は { wStudent.Birthday.ToString("yyyy年MM月dd日") }  です");
             // 4の解答
-            Person wPerson = student;
-            object wObj = student;
+            Person wPerson = wStudent;
+            object wObj = wStudent;
         }
     }
 }

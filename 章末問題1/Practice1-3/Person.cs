@@ -5,7 +5,13 @@ namespace Practice1_3 {
     /// NameとBirthdayプロパティを持つクラス
     /// </summary>
     public class Person {
+        /// <summary>
+        /// 名前
+        /// </summary>
         public string Name;
+        /// <summary>
+        /// 生年月日
+        /// </summary>
         public DateTime Birthday;
     }
 }

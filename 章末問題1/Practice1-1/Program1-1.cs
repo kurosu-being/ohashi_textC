@@ -1,5 +1,5 @@
-﻿using ProductNamespace;
-using System;
+﻿using System;
+using ProductNamespace;
 
 // 問題 1.1
 
@@ -12,9 +12,7 @@ using System;
 //     ただし、MainメソッドのあるProgramクラスの名前空間はそのままとしてください。
 
 namespace Practice1_1 {
-    /// <summary>
-    ///  Mainメソッドを実行するクラス
-    /// </summary>
+
     internal class Program {
         /// <summary>
         /// どら焼きオブジェクトを作成し、消費税額を計算してコンソールに出力する
