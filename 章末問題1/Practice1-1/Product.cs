@@ -1,4 +1,4 @@
-﻿namespace ProductNamespace {
+﻿namespace Practice1_1Product {
     /// <summary>
     /// 商品情報を管理する
     /// </summary>
@@ -15,10 +15,12 @@
         /// 商品価格
         /// </summary>
         public int Price { get; private set; }
+
         /// <summary>
         /// 税率
-        /// </summary>
+        /// </summary>  
         private const double C_Tax = 0.08;
+
         /// <summary>
         /// 商品情報を初期化するコンストラクタ
         /// </summary>
@@ -31,7 +33,7 @@
             this.Price = vPrice;
         }
         /// <summary>
-        /// 消費税額を取得する
+        /// 消費税額を取得する ※小数点以下は切り捨て
         /// </summary>
         /// <returns>消費税額</returns>
         public int GetTax() {

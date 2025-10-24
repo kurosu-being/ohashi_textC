@@ -8,7 +8,7 @@
 // 3. Productクラスにが属する名前空間を別の名前空間に変更し、Mainメソッドから呼び出すようにしてください。
 //    ただし、MainメソッドのあるProgramクラスの名前空間はそのままとしてください。
 using System;
-using ProductNamespace;
+using Practice1_1Product;
 
 namespace Practice1_1 {
     internal class Program {

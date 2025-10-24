@@ -26,8 +26,8 @@ namespace Practice1_2 {
             var wMyClass = new MyClass(10, 20);
             var wMyStruct = new MyStruct(30, 40);
             PrintObjects(wMyClass, wMyStruct);
-            GetDouble(wMyClass, wMyStruct);
             // 3の解答
+            GetDouble(wMyClass, wMyStruct);
             PrintObjects(wMyClass, wMyStruct);
         }
         // 1の解答
@@ -41,7 +41,7 @@ namespace Practice1_2 {
             Console.WriteLine($"MyStructの X は {vMyStruct.X} , Y は {vMyStruct.Y}");
         }
         /// <summary>
-        /// それぞれのプロパティの値を２倍する
+        /// それぞれのプロパティの値を2倍する
         /// </summary>
         /// <param name="vMyClass">MyClass型の2数</param>
         /// <param name="vMyStruct">MyStruct型の2数</param>
